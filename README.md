@@ -7,10 +7,7 @@ How to run standalone docker with one command:
 ```
 docker-compose up -d
 ```
-1.(optional) Check logs:
-```
-docker-compose logs -f
-```
+
 
 **And that's all! Spark standalone is running with 2 workers.**
 
