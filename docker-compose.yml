@@ -1,0 +1,19 @@
+version: '2'
+services:
+  spark-master:
+   image: spark-master
+   ports:
+   - "7077:7077"
+   - "8080:8080"
+  spark-worker1:
+   image: spark-worker
+   ports:
+   - "8081:8081"
+   depends_on:
+   - spark-master
+  spark-worker2:
+   image: spark-worker
+   ports:
+   - "8082:8081"
+   depends_on:
+   - spark-master
